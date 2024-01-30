@@ -9,5 +9,5 @@ candy = pd.read_csv('candy_production.csv',
 
 # Plot and show the time series on axis ax1
 fig, ax1 = plt.subplots()
-ax1.plot(ax=____)
-____
+candy.plot(ax = ax1)
+plt.show()
