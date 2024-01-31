@@ -1,5 +1,5 @@
 # Generate predictions
-dynamic_forecast = results.get_prediction(steps=-30, dynamic=True)
+dynamic_forecast = results.get_prediction(start=-30, dynamic=True)
 
 # Extract prediction mean
 mean_forecast = dynamic_forecast.predicted_mean
