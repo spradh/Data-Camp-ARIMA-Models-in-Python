@@ -1,3 +1,4 @@
+#1
 # Import
 from statsmodels.graphics.tsaplots import plot_acf, plot_pacf
 
@@ -11,3 +12,4 @@ plot_acf(df, lags=10, zero=False, ax=ax1)
 plot_pacf(df, lags=10, zero=False, ax=ax2)
 
 plt.show()
+
