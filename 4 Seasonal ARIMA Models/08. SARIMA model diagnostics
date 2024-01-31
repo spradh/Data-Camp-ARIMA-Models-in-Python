@@ -1,0 +1,15 @@
+# Import model class
+from statsmodels.tsa.statespace.sarimax import SARIMAX
+
+# Create model object
+model = SARIMAX(co2, 
+                order=(1,1,1), 
+                seasonal_order=(0,1,1,12), 
+)
+# Fit model
+results = model.fit()
+
+#3
+# Plot common diagnostics
+results.plot_diagnostics()
+plt.show()
